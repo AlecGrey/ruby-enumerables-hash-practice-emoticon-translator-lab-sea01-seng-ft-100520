@@ -17,8 +17,6 @@ def get_japanese_emoticon(file_path, emoticon)
     emote_hash[k][:english] == emoticon
   end
   
-  puts j_emote
-  
   j_emote ? emote_hash[j_emote][:japanese] : "Sorry, that emoticon was not found"
   
 end
