@@ -13,7 +13,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emote_hash = load_library(file_path)
-  j_emote = emote_hash.find do |k,v|
+  j_emote = emote_hash.keys.find do |k,v|
     emote_hash[k][:english] == emoticon
   end
   
